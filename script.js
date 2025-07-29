@@ -75,3 +75,20 @@ const [firstScore, secondScore] = scores;
 console.log("First Score:", firstScore);
 console.log("Second Score:", secondScore);
 console.log();
+
+// Part 4: The Spread Operator
+// Clone the student object
+const clonedStudent = { ...student };
+
+// Add a new property
+clonedStudent.graduationYear = 2026;
+
+// Log the cloned object
+console.log("Cloned Student with Graduation Year:", clonedStudent);
+
+// Merge two arrays
+const newCourses = ["Cloud Security", "Incident Response"];
+const allCourses = [...student.courses, ...newCourses];
+
+console.log("Merged Courses:", allCourses);
+console.log();
