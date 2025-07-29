@@ -25,3 +25,24 @@ console.log("Age:", student.age);
 // Output result of calling the method
 console.log(student.displayInfo());
 console.log();
+
+// Part 2: Working with JSON
+// Convert the student object into a JSON string
+const jsonString = JSON.stringify(student);
+
+// Log the JSON string to the console
+console.log("JSON String:", jsonString);
+
+// Convert the JSON string back into a JavaScript object
+const newStudent = JSON.parse(jsonString);
+
+// Log the newly created object and compare it to the original
+console.log("Parsed Object:", newStudent);
+console.log(
+  "Are Original and Parsed the same?",
+  student.name === newStudent.name &&
+    student.age === newStudent.age &&
+    student.enrolled === newStudent.enrolled &&
+    JSON.stringify(student.courses) === JSON.stringify(newStudent.courses)
+);
+console.log();
