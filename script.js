@@ -109,3 +109,14 @@ console.log("Updated Courses:", student.courses);
 const totalCourses = student.getCourseCount();
 console.log("Total Number of Courses:", totalCourses);
 console.log();
+
+//Part 6: Bonus Challenge with scores array above
+// Relog scores array and Use reduce to calculate the total sum
+console.log(scores);
+const total = scores.reduce((sum, score) => sum + score, 0);
+
+// Calculate average by dividing total by number of scores
+const average = total / scores.length;
+
+// Output the result
+console.log("Average Score:", average);
