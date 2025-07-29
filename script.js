@@ -46,6 +46,7 @@ console.log(
     JSON.stringify(student.courses) === JSON.stringify(newStudent.courses)
 );
 console.log();
+
 // Part 3: Using destructuring Assignment
 // Destructure an object in ES6
 const student2 = {
@@ -65,3 +66,12 @@ const { name, courses } = student2;
 
 console.log("Destructured Name:", name);
 console.log("Destructured Courses:", courses);
+// Create an array of scores
+const scores = [85, 92, 78, 90];
+
+// Destructure the first two scores
+const [firstScore, secondScore] = scores;
+
+console.log("First Score:", firstScore);
+console.log("Second Score:", secondScore);
+console.log();
