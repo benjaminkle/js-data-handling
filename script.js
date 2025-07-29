@@ -101,3 +101,11 @@ const allCourses = [...student.courses, ...newCourses];
 
 console.log("Merged Courses:", allCourses);
 console.log();
+
+// Part 5: Object Method
+student.addCourse("Firewall Setting Rules and Protection");
+console.log("Updated Courses:", student.courses);
+
+const totalCourses = student.getCourseCount();
+console.log("Total Number of Courses:", totalCourses);
+console.log();
