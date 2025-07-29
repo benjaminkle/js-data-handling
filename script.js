@@ -46,3 +46,22 @@ console.log(
     JSON.stringify(student.courses) === JSON.stringify(newStudent.courses)
 );
 console.log();
+// Part 3: Using destructuring Assignment
+// Destructure an object in ES6
+const student2 = {
+  name: "Khoa Le",
+  age: 31,
+  enrolled: true,
+  courses: ["Web Developing", "Database Design", "JavaScript"],
+  displayInfo: function () {
+    return `Student: ${this.name}, Age: ${this.age}, Enrolled: ${
+      this.enrolled
+    }, Courses: ${this.courses.join(", ")}`;
+  },
+};
+
+// Destructuring name and courses
+const { name, courses } = student2;
+
+console.log("Destructured Name:", name);
+console.log("Destructured Courses:", courses);
