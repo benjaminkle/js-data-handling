@@ -16,6 +16,15 @@ const student = {
       this.enrolled
     }, Courses: ${this.courses.join(", ")}`;
   },
+  // New method: Add course (for part 5)
+  addCourse: function (newCourse) {
+    this.courses.push(newCourse);
+  },
+
+  // New method: Get total number of courses (for part 5)
+  getCourseCount: function () {
+    return this.courses.length;
+  },
 };
 
 // Output name and age
